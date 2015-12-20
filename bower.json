@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Alexander C Truong <actruong3@wichita.edu>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "private": true,
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
+    "normalize-css": "~3.0.3"
+  }
+}
