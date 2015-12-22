@@ -14,39 +14,45 @@
 </head>
 <body>
     <div class="container">
-        <div class="header row">
+        <div class="header center-content clear-fix">
+            <ul class="contacts flex-box">
 
+            </ul>
         </div>
-        <div class="contacts row">
 
+        <div class="work-experience gray">
         </div>
-
-        <div class="gist row">
-
+        <div class="projects dark-gray">
         </div>
-        <div class="work-experience">
-
+        <div class="education gray">
         </div>
-        <div class="projects">
-
+        <div id="mapDiv">
+            <h2>Where I've Lived and Worked</h2>
         </div>
-        <div class="education">
+        <div id="lets-connect" class="dark-gray">
+            <h2 class="orange center-text">Let's Connect</h2>
+            <ul class="contacts flex-box">
 
-        </div>
-        <div class="places">
-
-        </div>
-        <div class="footer row">
-
-        </div>
-        <div class="contacts row">
-
+            </ul>
         </div>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <script src="assets/js/resumeBuilder.js"></script>
     <script src="assets/js/helper.js"></script>
+    <script>
+        $(function () {
+            bio.display();
+            work.display();
+            education.display();
+            projects.display();
+
+            $("#mapDiv")
+                .append(googleMap);
+        });
+    </script>
 </body>
+
 </html>
