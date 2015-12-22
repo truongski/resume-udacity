@@ -82,7 +82,7 @@ function logClicks(x, y) {
 }
 
 $(document).click(function (loc) {
-    logClicks(loc.pageX, log.pageY);
+    logClicks(loc.pageX, loc.pageY);
 });
 
 
